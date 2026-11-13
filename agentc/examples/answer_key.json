@@ -1,0 +1,15 @@
+{
+  "board_id": "example-001",
+  "note": "Đáp án mẫu dùng để kiểm bộ chấm. Không phải bo thật.",
+  "components": [
+    {"ref": "U1", "part": "MCU-X", "pin_count": 8},
+    {"ref": "R1", "value": "10k"},
+    {"ref": "R2", "value": "1k"},
+    {"ref": "C1", "value": "100n"}
+  ],
+  "nets": [
+    {"name": "GND", "pins": ["U1.4", "R2.2", "C1.2"]},
+    {"name": "VCC", "pins": ["U1.8", "R1.1"]},
+    {"name": "SIG", "pins": ["U1.2", "R1.2", "R2.1", "C1.1"]}
+  ]
+}

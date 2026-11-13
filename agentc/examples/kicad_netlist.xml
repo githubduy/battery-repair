@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<export version="E">
+  <design>
+    <source>example.kicad_sch</source>
+    <tool>Eeschema 8.0</tool>
+  </design>
+  <components>
+    <comp ref="U1">
+      <value>MCU-X</value>
+      <libsource lib="example" part="MCU-X"/>
+    </comp>
+    <comp ref="R1">
+      <value>10k</value>
+      <libsource lib="Device" part="R"/>
+    </comp>
+    <comp ref="R2">
+      <value>1k</value>
+      <libsource lib="Device" part="R"/>
+    </comp>
+    <comp ref="C1">
+      <value>100n</value>
+      <libsource lib="Device" part="C"/>
+    </comp>
+  </components>
+  <nets>
+    <net code="1" name="GND">
+      <node ref="U1" pin="4"/>
+      <node ref="R2" pin="2"/>
+      <node ref="C1" pin="2"/>
+    </net>
+    <net code="2" name="VCC">
+      <node ref="U1" pin="8"/>
+      <node ref="R1" pin="1"/>
+    </net>
+    <net code="3" name="SIG">
+      <node ref="U1" pin="2"/>
+      <node ref="R1" pin="2"/>
+      <node ref="R2" pin="1"/>
+      <node ref="C1" pin="1"/>
+    </net>
+    <net code="4" name="unconnected-(U1-PadX)">
+      <node ref="U1" pin="9"/>
+    </net>
+  </nets>
+</export>

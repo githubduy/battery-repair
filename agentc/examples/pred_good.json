@@ -1,0 +1,17 @@
+{
+  "board_id": "example-001",
+  "note": "Dự đoán mẫu có một lỗi thừa linh kiện, một net thiếu chân, một net sai.",
+  "components": [
+    {"ref": "U1", "part": "MCU-X", "pin_count": 8},
+    {"ref": "R1", "value": "10kΩ"},
+    {"ref": "R2", "value": "1kΩ"},
+    {"ref": "C1", "value": "100n"},
+    {"ref": "C9", "value": "1u"}
+  ],
+  "nets": [
+    {"name": "net-a", "pins": ["U1.4", "R2.2", "C1.2"]},
+    {"name": "net-b", "pins": ["U1.8", "R1.1"]},
+    {"name": "net-c", "pins": ["U1.2", "R1.2", "R2.1"]},
+    {"name": "net-d", "pins": ["U1.1", "U1.3"]}
+  ]
+}
